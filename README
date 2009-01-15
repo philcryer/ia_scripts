@@ -1,0 +1,19 @@
+ia_digestion.sh
+===============
+ia_digestion.sh downloads files from the Internet Archive, using the file target_urls to define what needs to be grabbed, and then checks them into a Fedora-commons digital repository.  Edit ia_digestion.sh and ensure all the variables are set the way you need, then just figure out the ID Title of the files you need, put that on a new line in target_urls and run ./ia_digestion.sh
+
+TODO: integrate Solr to allow adding object to Solr after FC ingest
+
+
+ia_search.sh
+============
+a proof of concept REST based search script against Internet Archive.  Just run it providing an arguement of the thing you're searching for.  As an example: `./ia_search.sh vanderslice` would give you a list of the first occurance of Vanderslice in the IA.
+
+TODO: allow for search strings >1 in length, format output, etc.
+
+
+Questions?
+
+phil.cryer@mobot.org
+
+Thanks.
